@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8"/>
+    <title>Chocolate Bars</title>
+</head>
+<body>
+    <h1>Chocolate Barz FTW!</h1>
+
+    <table border="1">
+        <tr>
+            <th>
+                Bar
+            </th>
+            <th>
+                Rating
+            </th>
+        </tr>
+        {% for b in bars %}
+            <tr>
+                <td>
+                    {{b[0]}}
+                </td>
+                <td>
+                    {{b[1]}}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
