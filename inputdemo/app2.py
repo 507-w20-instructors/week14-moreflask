@@ -10,9 +10,9 @@ def index():
 def handle_the_form():
     user_name = request.form["name"]
     fave_color = request.form["colors"]
-    return f"Hello {user_name}! I hear you like {fave_color}."
+    # return f"Hello {user_name}! I hear you like {fave_color}."
 
-#    return render_template('response.html', name=user_name, color=fave_color)
+    return render_template('response.html', name=user_name, color=fave_color)
 
 if __name__ == "__main__":
     app.run(debug=True)

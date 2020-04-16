@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF8"/>
+    <title>Chocolate Bars Home</title>
+</head>
+<body>
+    <h1>Welcome to the Chocolate Bar Browser!</h1>
+
+    <form action='/results' method='POST'>
+    <p>
+    Sort by: <br/>
+        <input type='radio' name='sort' 
+                value='rating' checked='checked'/> Ratings <br/>
+        <input type='radio' name='sort' 
+                value='cocoa'/> Cocoa % <br/>
+    </p>
+
+    <p>
+    Sort direction: <br/>
+        <input type='radio' name='dir'
+            value='desc' checked='checked'/>High to Low<br/>
+        <input type='radio' name='dir'
+            value='asc'/>Low to High<br/>
+    </p>
+
+    <p>
+        Filter by source region: <br/>
+        <select name='region'>
+            <option value='All'>All regions</option>
+            <option value='Africa'>Africa</option>
+            <option value='Americas'>Americas</option>
+            <option value='Asia'>Asia</option>
+            <option value='Europe'>Europe</option>
+            <option value='Oceania'>Oceania</option>
+        </select>
+    </p>
+        
+    <p>
+        <input type='checkbox' name='plot'/>Plot results?<br/>
+    </p>
+
+    <input type='submit' value='Get Bars'/>
+
+    </form>
+
+</body>
+</html>

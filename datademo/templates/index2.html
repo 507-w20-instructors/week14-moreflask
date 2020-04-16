@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF8"/>
+    <title>Chocolate Bars Home</title>
+</head>
+<body>
+    <h1>Welcome to the Chocolate Bar Browser!</h1>
+
+    <form action='/results' method='POST'>
+    <p>
+    Sort by: <br/>
+        <input type='radio' name='sort' 
+                value='rating' checked='checked'/> Ratings <br/>
+        <input type='radio' name='sort' 
+                value='cocoa'/> Cocoa % <br/>
+    </p>
+
+    <p>
+    Sort direction: <br/>
+        <input type='radio' name='dir'
+            value='desc' checked='checked'/>High to Low<br/>
+        <input type='radio' name='dir'
+            value='asc'/>Low to High<br/>
+    </p>
+
+    <input type='submit' value='Get Bars'/>
+
+    </form>
+
+</body>
+</html>
